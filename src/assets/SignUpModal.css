@@ -1,0 +1,143 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-signup {
+    padding: 25px 15px 25px 15px;
+    max-width: 400px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.modal-signup h2 {
+    font-weight: bold;
+}
+
+.modal-close {   
+    float: right;
+    margin-top: -90px;
+}
+
+.modal-close a {
+    font-size: 25px;
+    font-weight: bold;
+    color: #8e8e8e;
+}
+
+.modal-close a:hover {
+    color: #ce3232;
+    outline: none;
+}
+
+.modal-form-signup {
+    background-color: #fff;
+    margin:auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 1em 2em 1em;
+    text-align: center;
+}
+
+.form-container {
+    margin-top: .1em;
+    margin-bottom: .1rem;
+    display: grid;
+    gap: 1.8em;
+}
+
+.form-group {
+    position: relative;
+    --color: #5757577e;
+}
+
+.form-input {
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1.5rem;
+    padding: .4em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Poppins';
+}
+
+.form-input:focus + .form-label, 
+.form-input:not(:placeholder-shown) + .form-label {
+    transform: translateY(-12px) scale(.8);
+    transform-origin: left top;
+    font-weight: bold;
+    color: #ce3232;
+}
+
+.form-label {
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform 0.5s, color .3s;
+}
+
+.form-submit {
+    width: 100%;
+    background: #ce3232;
+    color: #fff;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: .6em 0;
+    border: none;
+    border-radius: 3em;
+    margin-bottom: .1rem;
+}
+
+.form-social {
+    padding-top: 2px;
+}
+
+.modal-extras {
+    display: grid;
+}
+
+a.form-facebook:hover, a.form-facebook:active, a.form-facebook:focus {
+    color: #2261D6;
+    outline: none
+}
+
+a.form-google:hover, a.form-google:active, a.form-google:focus {
+    color: #E26F14;
+    outline: none
+}
+
+.form-facebook {
+    padding-right: 20px;
+}
+
+@media (max-width: 425px) {
+    .modal-signup {
+        padding: 15px 5px 15px 0px;
+        max-width: 300px;
+        margin: 100px auto;
+        background: #fff;
+        border-radius: 15px;
+        max-height: calc(100vh - 210px);
+        overflow-y: auto;
+    }
+
+    .modal-signup h2 {
+        font-size: 2.7rem;
+    }
+
+    .modal-close {
+        margin-top: -80px;
+        margin-right: 10px;
+    }
+}

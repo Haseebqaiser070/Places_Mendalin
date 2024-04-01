@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /files/
+Disallow: /src/
+Allow: /public/
+Allow: /static/
+Sitemap: https://placesmedellin.com/sitemap.xml
+
